@@ -118,8 +118,15 @@ private extension SimpleAvatarView {
         trailingAnchor.constraintEqualToAnchor(initialsLabel.trailingAnchor, constant: margin).active = true
         
         // Add image as an overlay to hide initials once it's been added
+        imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .ScaleAspectFill
         addSubview(imageView)
+        
+        let views = ["backgroundView": backgroundView, "initialsLabel": initialsLabel, "imageView": imageView]
+        let metrics = ["margin": margin]
+        
+        addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[imageView]|", options: [], metrics: metrics, views: views))
+        addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[imageView]|", options: [], metrics: metrics, views: views))
     }
     
     func updateColors() {
