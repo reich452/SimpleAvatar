@@ -14,6 +14,7 @@
 		70C401781BE3AF1A002D3A5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70C401761BE3AF1A002D3A5D /* LaunchScreen.storyboard */; };
 		70C401831BE3AF1A002D3A5D /* SimpleAvatarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C401821BE3AF1A002D3A5D /* SimpleAvatarTests.swift */; };
 		70C4018E1BE3AF1A002D3A5D /* SimpleAvatarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C4018D1BE3AF1A002D3A5D /* SimpleAvatarUITests.swift */; };
+		70C4019C1BE3AF28002D3A5D /* SimpleAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C4019B1BE3AF28002D3A5D /* SimpleAvatarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		70C401891BE3AF1A002D3A5D /* SimpleAvatarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAvatarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C4018D1BE3AF1A002D3A5D /* SimpleAvatarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAvatarUITests.swift; sourceTree = "<group>"; };
 		70C4018F1BE3AF1A002D3A5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70C4019B1BE3AF28002D3A5D /* SimpleAvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleAvatarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				70C4016D1BE3AF1A002D3A5D /* AppDelegate.swift */,
 				70C4016F1BE3AF1A002D3A5D /* ViewController.swift */,
+				70C4019B1BE3AF28002D3A5D /* SimpleAvatarView.swift */,
 				70C401711BE3AF1A002D3A5D /* Main.storyboard */,
 				70C401741BE3AF1A002D3A5D /* Assets.xcassets */,
 				70C401761BE3AF1A002D3A5D /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			files = (
 				70C401701BE3AF1A002D3A5D /* ViewController.swift in Sources */,
 				70C4016E1BE3AF1A002D3A5D /* AppDelegate.swift in Sources */,
+				70C4019C1BE3AF28002D3A5D /* SimpleAvatarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
