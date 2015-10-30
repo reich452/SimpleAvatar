@@ -101,7 +101,13 @@ private extension SimpleAvatarView {
         
         clipsToBounds = true
         
+        backgroundView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(backgroundView)
+
+        addConstraint(NSLayoutConstraint(item: backgroundView, attribute: .Leading, relatedBy: .Equal, toItem: self, attribute: .Leading, multiplier: 1.0, constant: 0.0))
+        addConstraint(NSLayoutConstraint(item: backgroundView, attribute: .Trailing, relatedBy: .Equal, toItem: self, attribute: .Trailing, multiplier: 1.0, constant: 0.0))
+        addConstraint(NSLayoutConstraint(item: backgroundView, attribute: .Top, relatedBy: .Equal, toItem: self, attribute: .Top, multiplier: 1.0, constant: 0.0))
+        addConstraint(NSLayoutConstraint(item: backgroundView, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .Bottom, multiplier: 1.0, constant: 0.0))
 
         initialsLabel.textAlignment = .Center
         addSubview(initialsLabel)
