@@ -109,8 +109,13 @@ private extension SimpleAvatarView {
         addConstraint(NSLayoutConstraint(item: backgroundView, attribute: .Top, relatedBy: .Equal, toItem: self, attribute: .Top, multiplier: 1.0, constant: 0.0))
         addConstraint(NSLayoutConstraint(item: backgroundView, attribute: .Bottom, relatedBy: .Equal, toItem: self, attribute: .Bottom, multiplier: 1.0, constant: 0.0))
 
+        initialsLabel.translatesAutoresizingMaskIntoConstraints = false
         initialsLabel.textAlignment = .Center
         addSubview(initialsLabel)
+        
+        initialsLabel.centerYAnchor.constraintEqualToAnchor(centerYAnchor).active = true
+        initialsLabel.leadingAnchor.constraintEqualToAnchor(leadingAnchor, constant: margin).active = true
+        trailingAnchor.constraintEqualToAnchor(initialsLabel.trailingAnchor, constant: margin).active = true
         
         // Add image as an overlay to hide initials once it's been added
         imageView.contentMode = .ScaleAspectFill
