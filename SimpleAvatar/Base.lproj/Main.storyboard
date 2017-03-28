@@ -20,18 +20,6 @@
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y8i-JZ-JIx" customClass="SimpleAvatarView" customModule="SimpleAvatar" customModuleProvider="target">
-                                <rect key="frame" x="29" y="79" width="233" height="194"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="firstName" value="Buzz"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="lastName" value="Lightyear"/>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="buzz"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
@@ -40,7 +28,4 @@
             <point key="canvasLocation" x="279.375" y="325.35211267605632"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="buzz" width="150" height="150"/>
-    </resources>
 </document>
